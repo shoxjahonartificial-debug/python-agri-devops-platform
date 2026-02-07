@@ -35,6 +35,10 @@ def teardown(exc):
     if hasattr(request, "_timer"):
         request._timer.__exit__(None, None, None)
 
+@app.route("/")
+def home():
+    return "Agri Digital Platform is running!"
+
 @app.route("/metrics")
 def metrics():
     return Response(
@@ -42,6 +46,6 @@ def metrics():
         mimetype=CONTENT_TYPE_LATEST
     )
 
-@app.route("/")
-def home():
-    return "Agri Digital Platform is running!"
+# 🔥 ВОТ ЭТО БЫЛО ОТСУТСТВУЮЩЕЕ
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=8080)
