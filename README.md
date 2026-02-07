@@ -526,7 +526,26 @@ Highlights memory usage distribution across namespaces.
 * **Kubernetes** – orchestrates containerised workloads
 * **Argo CD** – enables GitOps-based deployment and monitoring consistency
 
+
+![telegram-cloud-photo-size-2-5203935126805484117-w](https://github.com/user-attachments/assets/bad82dca-59f1-4adf-b931-1f3b0fe9da20)
+
 ---
 
+⏱️ HTTP Request Latency (P95)
 
+This Grafana chart shows the 95th percentile (P95) HTTP request latency for the application, calculated using Prometheus histograms.
+
+The metric is derived from http_request_duration_seconds_bucket
+
+The P95 value represents the response time under which 95% of requests are completed
+
+The graph shows mostly stable latency with small spikes during periods of increased activity
+
+This metric is important because it reflects real user experience, highlighting slow requests that may not be visible in average response time metrics.
+
+Overall, the chart confirms that the application maintains acceptable and consistent performance under normal load.
+
+🔹 One-line version (optional)
+
+This graph visualises the 95th percentile HTTP request latency, demonstrating stable application performance over time.
 
