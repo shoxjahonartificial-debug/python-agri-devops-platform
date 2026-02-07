@@ -423,6 +423,8 @@ These metrics enable:
 ## ✅ Conclusion
 
 The application metrics follow **Prometheus best practices** and provide clear observability into system behaviour, performance, and reliability in a production-ready environment.
+![telegram-cloud-photo-size-2-5203964878043943204-w](https://github.com/user-attachments/assets/365da0e4-41d5-4836-b0cf-1f7e74cec61e)
+
 
 
 
